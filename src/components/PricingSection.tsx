@@ -56,88 +56,9 @@ Pode confirmar os detalhes e forma de pagamento?`;
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">{" "}
-          <Card className="bg-gradient-card border-primary/30 shadow-elevated hover:shadow-glow transition-all duration-300 animate-scale-in overflow-hidden">
-            <CardHeader className="text-center bg-gradient-green text-primary-foreground relative">
-              <div className="absolute top-4 right-4">
-                <Badge className="bg-black/20 text-white">
-                  <Star className="w-4 h-4 mr-1" />
-                  Mais Vendido
-                </Badge>
-              </div>
-              <CardTitle className="text-2xl md:text-3xl font-bold mb-2">
-                Gateway Completo
-              </CardTitle>
-              <p className="text-primary-foreground/90 text-sm md:text-base">
-                Tudo que você precisa para vender online
-              </p>
-              <div className="mt-4 md:mt-6">
-                <span className="text-4xl md:text-5xl font-bold">R$ 200</span>
-                <span className="text-sm md:text-lg opacity-90 ml-2">pagamento único</span>
-              </div>
-            </CardHeader>
-            
-            <CardContent className="p-6 md:p-8">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">{" "}
-                <div>
-                  <h4 className="font-bold text-lg mb-4 text-primary">
-                    ✨ Tudo Incluído:
-                  </h4>
-                  <ul className="space-y-3">
-                    {benefits.slice(0, 6).map((benefit, index) => (
-                      <li key={benefit} className="flex items-center gap-3 animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                        <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="text-sm">{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                
-                <div>
-                  <h4 className="font-bold text-lg mb-4 text-primary">
-                    🎯 Diferenciais:
-                  </h4>
-                  <ul className="space-y-3">
-                    {benefits.slice(6).map((benefit, index) => (
-                      <li key={benefit} className="flex items-center gap-3 animate-fade-in" style={{ animationDelay: `${(index + 6) * 0.1}s` }}>
-                        <Check className="w-5 h-5 text-primary flex-shrink-0" />
-                        <span className="text-sm">{benefit}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap justify-center gap-4 mb-8">
-                {urgencyFeatures.map((feature) => (
-                  <div key={feature.text} className={`flex items-center gap-2 px-4 py-2 rounded-full ${feature.highlight ? 'bg-primary/20 text-primary' : 'bg-muted/50 text-muted-foreground'}`}>
-                    <feature.icon className="w-4 h-4" />
-                    <span className="text-sm font-medium">{feature.text}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="text-center">
-                <Button
-                  variant="success"
-                  size="lg"
-                  onClick={() => {
-                    const encodedMessage = encodeURIComponent(whatsappMessage);
-                    window.open(`https://wa.me/5511937587627?text=${encodedMessage}`, '_blank');
-                  }}
-                  className="w-full md:w-auto px-8 md:px-12 py-4 md:py-6 text-lg md:text-xl font-bold"
-                >
-                  🚀 Comprar Agora - R$ 200
-                </Button>
-                <p className="text-xs md:text-sm text-muted-foreground mt-4 px-4">
-                  Pagamento 100% seguro via Mercado Pago • Entrega garantida em 24h
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
+        <div className="max-w-4xl mx-auto">
           {/* ROI Calculator */}
-          <div className="mt-12 p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
+          <div className="p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
             <h3 className="text-2xl font-bold text-center mb-6 text-primary">
               💰 Calcule Sua Economia
             </h3>
