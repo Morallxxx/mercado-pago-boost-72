@@ -73,8 +73,8 @@ const DemoSection = () => {
                 </div>
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-6">
-              <Carousel className="w-full max-w-4xl mx-auto">
+            <CardContent className="p-2">
+              <Carousel className="w-full mx-auto">
                 <CarouselContent>
                   {demoImages.map((image, index) => (
                     <CarouselItem key={index}>
@@ -82,38 +82,18 @@ const DemoSection = () => {
                         <img
                           src={image.src}
                           alt={image.alt}
-                          className="w-full h-96 object-contain bg-gradient-to-br from-background to-card rounded-lg border border-border/50"
+                          className="w-full h-[500px] object-cover bg-gradient-to-br from-background to-card rounded-lg border border-border/50"
                         />
-                        <div className="mt-4 text-center">
-                          <h4 className="font-bold text-lg mb-2 text-primary">
-                            {image.title}
-                          </h4>
-                          <p className="text-muted-foreground text-sm">
-                            {image.description}
-                          </p>
-                        </div>
                       </div>
                     </CarouselItem>
                   ))}
                 </CarouselContent>
-                <CarouselPrevious className="left-4" />
-                <CarouselNext className="right-4" />
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
               </Carousel>
             </CardContent>
           </Card>
 
-          {/* Instruções para substituir imagens */}
-          <div className="mt-8 p-6 bg-card/50 rounded-lg border border-border/50">
-            <div className="text-center">
-              <h4 className="font-bold text-lg mb-2 text-primary">
-                📸 Substitua pelas suas imagens
-              </h4>
-              <p className="text-muted-foreground text-sm max-w-2xl mx-auto">
-                Envie os 5 prints da tela do seu script para substituir as imagens placeholder. 
-                O carrossel está pronto para exibir suas capturas de tela do sistema.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
