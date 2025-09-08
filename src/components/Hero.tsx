@@ -32,7 +32,7 @@ Aguardo retorno! 😊`;
           
           <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent leading-tight text-shadow">
             Seu Gateway de
-            <span className="block text-primary animate-glow">Pagamento Próprio</span>
+            <span className="block text-white animate-glow">Pagamento Próprio</span>
           </h1>
           
           <p className="text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8 max-w-2xl mx-auto leading-relaxed px-4">
@@ -40,7 +40,7 @@ Aguardo retorno! 😊`;
             <span className="text-primary font-semibold"> Tenha seu próprio sistema</span> por apenas R$ 200!
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center mb-8 md:mb-12 px-4">
+          <div className="flex justify-center items-center mb-8 md:mb-12 px-4">
             <WhatsAppButton
               phone="5511937587627"
               message={whatsappMessage}
@@ -48,9 +48,6 @@ Aguardo retorno! 😊`;
             >
               💬 Comprar Agora por R$ 200
             </WhatsAppButton>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto border-primary/30 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 px-6 md:px-8 py-4 md:py-6 text-base md:text-lg">
-              Ver Demonstração
-            </Button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto px-4">
